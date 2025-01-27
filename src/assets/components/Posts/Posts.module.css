@@ -1,0 +1,29 @@
+.wrapper {
+    width: 100%;
+}
+
+.notFound {
+    margin-top: 2rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--color-text);
+}
+
+.notFound span {
+    font-size: 1.5rem;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 3rem;
+    }
+}
