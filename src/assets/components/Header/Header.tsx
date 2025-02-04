@@ -23,15 +23,17 @@ const Header: React.FC = ({onSearch}) => {
     return (
         <div className={s.wrapper}>
             <div className={s.top}>
-                <button onClick={handleToggle} className={s.button}>
-                    <span />
-                    <span />
-                    <span />
-                </button>
-                <a href="#" className={s.link}>
-                    <LogoIcon />
-                </a>
-                <Search onSearch={onSearch} />
+                <div className={s.container}>
+                    <button onClick={handleToggle} className={s.button}>
+                        <span />
+                        <span />
+                        <span />
+                    </button>
+                    <a href="#" className={s.link}>
+                        <LogoIcon />
+                    </a>
+                    <Search onSearch={onSearch} />
+                </div>
             </div>
             {isDesktop ? <Nav /> : <MobileMenu isOpen={isMenuOpen} onClose={handleClose} />}
         </div>

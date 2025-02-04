@@ -3,13 +3,19 @@
     padding: 0 1.25rem;
 
     @media screen and (min-width: 1200px) {
-        padding: 0 0.5rem;
+        padding: 0;
         border-bottom: 1px solid var(--color-border);
         position: relative;
     }
 }
 
 .top {
+    @media screen and (min-width: 1200px) {
+        border-bottom: 1px solid var(--color-border);
+    }
+}
+
+.container {
     margin: 0 auto;
     max-width: 1160px;
     padding: 2rem 0;
@@ -20,7 +26,6 @@
 
     @media screen and (min-width: 1200px) {
         padding: 1.8125rem 0 1.625rem;
-        border-bottom: 1px solid var(--color-border);
     }
 }
 
